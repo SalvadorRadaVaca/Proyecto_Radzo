@@ -1,4 +1,5 @@
-package Model;
+package org.VotingMVCWeb.model;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -10,8 +11,9 @@ public class AdmonDB {
 	private String message = "";
 	private Connection connection = null;
 	
-	public AdmonDB() {
+	public AdmonDB() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
 		try {
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			String server = "jdbc:mysql://localhost:3306/voting_booth";
 			String user = "Sal565";
 		    String password = "12177";
