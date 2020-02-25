@@ -7,6 +7,10 @@
   --mainGrey: #9b9999;
   --TransGrey: rgba(220,220,220, 0.3);
 }
+@font-face {
+  font-family: KATO;
+  src: url('../KATO.otf');
+}
 body {
   color: var(--mainBlack);
   background: var(--mainBlack);
