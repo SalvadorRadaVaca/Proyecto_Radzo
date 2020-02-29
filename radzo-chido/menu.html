@@ -10,70 +10,58 @@
     <link rel="stylesheet" href="css/main.css" />
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="css/all.css" />
     <title>Radzo Ramen House</title>
     <style></style>
   </head>
-
-  <body>
+<body>
 <!-- Header section -->
 <header>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
-    <!--
-          https://www.iconfinder.com/icons/185106/armchair_chair_streamline_icon
-          Creative Commons (Attribution 3.0 Unported);
-          https://www.iconfinder.com/webalys
-        -->
-        <a href="index.html" class="navbar-brand">
-          <img  id="logoradzo" class="ml-4" src="img/logo.png" alt="company logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item mx-2">
-              <a href="index.html" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item mx-2 nav-active">
-              <a href="menu.html" class="nav-link">Menú</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a href="recompensas.html" class="nav-link">Recompensas</a>
-            </li>
-          </ul>
+    <a href="index.html" class="navbar-brand">
+      <img id="logoradzo" class="ml-4" src="img/logo.png" alt="company logo">
+    </a>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-2">
+          <a href="index.html" class="nav-link kato">Inicio</a>
+        </li>
+        <li class="nav-item mx-2 nav-active">
+          <a href="menu.html" class="nav-link kato">Menú</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a href="recompensas.html" class="nav-link kato">Recompensas</a>
+        </li>
+      </ul>
+    </div>
+    <a class="navbar-icons d-none d-lg-flex">
+      <!-- Single icon -->
+      <a href="busqueda.html" class="navbar-icon mx-2">
+        <i class="fas fa-search"></i>
+      </a>
+      <!-- End of Single icon -->
+      <!-- Single icon -->
+      <a href="login.html" class="navbar-icon mx-2">
+        <i class="fas fa-user"></i>
+      </a>
+      <!-- End of Single icon -->
+      <!-- Single icon -->
+      <a href="carrito.html" class="navbar-icon mx-2">
+        <i class="fas fa-shopping-cart"></i>
+        <div class="cart-items" id="shopCar">
+          0
         </div>
-        <a class="navbar-icons d-none d-lg-flex">
-          <!-- Single icon -->
-          <a href="busqueda.html" class="navbar-icon mx-2">
-            <i class="fas fa-search"></i>
-          </a>
-          <!-- End of Single icon -->
-          <!-- Single icon -->
-          <a href="login.html" class="navbar-icon mx-2">
-            <i class="fas fa-user"></i>
-          </a>
-          <!-- End of Single icon -->
-          <!-- Single icon -->
-          <a href="carrito.html" class="navbar-icon mx-2">
-            <i class="fas fa-shopping-cart"></i>
-            <div class="cart-items">
-              0
-            </div>
-          </a>
-          <!-- End of Single icon -->
-        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- End of Single icon -->
+    </div>
   </nav>
   <!-- End of Navbar -->
-  <!-- <div class="banner d-flex align-items-center pl-3 pl-lg-5">
-    <div>
-      <h1 class="text-slanted mb-0">RADZO</h1>
-      <h1 class="text-uppercase font-weight-bold">Ramen House</h1>
-      <a href="products.html" class="btn btn-red">Ver menú</a>
-    </div>
-  </div> -->
   </header>
   <!-- End of header section -->
   
@@ -82,72 +70,35 @@
     <div class="container">
       <div class="row my-5">
         <div class="col-12 mx-auto text-center">
-          <h1>Comidas</h1>
+          <h1 class="kato">Comidas</h1>
         </div>
       </div>
       <div class="row my-5">
         <div class="foods-container col-md-3">
-          <img src="img/ramen_1.jpeg" alt="">
-          <a href="#" class="foods-store-link"> Add to cart</a>
-          <h4>Ramen</h4>
-          <h6>$120</h6>
+          <img src="ramen_1.jpeg" alt="">
+          <h4 class="bitter">Ramen</h4>
+          <h6 class="bitter">$120</h6>
         </div>
         <div class="col-md-3">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae, labore dolorem iusto suscipit, sint deleniti enim dolore vel illo repudiandae, maiores inventore modi est assumenda iure harum aut fuga.</p>
-        </div>  
-        <div class="foods col-md-3">
-          <img src="img/ramen_1.jpeg" alt="">
-          <h4>Ramen</h4>
-          <h6>$120</h6>
-        </div>
-        <div class="col-md-3">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae, labore dolorem iusto suscipit, sint deleniti enim dolore vel illo repudiandae, maiores inventore modi est assumenda iure harum aut fuga.</p>
-        </div> 
+          <div class="ec-stars-wrapper">
+            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+          </div>
+          <p class="description bitter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae, labore dolorem iusto suscipit, sint deleniti enim dolore vel illo repudiandae, maiores inventore modi est assumenda iure harum aut fuga.</p>
+          <input class="send" type="number" min="0" max="5" class="send kato"/>
+        </div>   
       </div>
       <div class="row my-5">
         <div class="col-12 mx-auto text-center">
-          <h1>Bebidas</h1>
-        </div>
-      </div>
-      <div class="row my-5">
-        <div class="foods col-md-3">
-          <img src="img/ramen_1.jpeg" alt="">
-          <h4>Ramen</h4>
-          <h6>$120</h6>
-        </div>
-        <div class="col-md-3">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae, labore dolorem iusto suscipit, sint deleniti enim dolore vel illo repudiandae, maiores inventore modi est assumenda iure harum aut fuga.</p>
-        </div>  
-        <div class="foods col-md-3">
-          <img src="img/ramen_1.jpeg" alt="">
-          <h4>Ramen</h4>
-          <h6>$120</h6>
-        </div>
-        <div class="col-md-3">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae, labore dolorem iusto suscipit, sint deleniti enim dolore vel illo repudiandae, maiores inventore modi est assumenda iure harum aut fuga.</p>
+          <h1 class="kato">Bebidas</h1>
         </div>
       </div>
       <div class="row my-5">
         <div class="col-12 mx-auto text-center">
-          <h1>Postres</h1>
-        </div>
-      </div>
-      <div class="row my-5">
-        <div class="foods col-md-3">
-          <img src="img/ramen_1.jpeg" alt="">
-          <h4>Ramen</h4>
-          <h6>$120</h6>
-        </div>
-        <div class="col-md-3">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae, labore dolorem iusto suscipit, sint deleniti enim dolore vel illo repudiandae, maiores inventore modi est assumenda iure harum aut fuga.</p>
-        </div>  
-        <div class="foods col-md-3">
-          <img src="img/ramen_1.jpeg" alt="">
-          <h4>Ramen</h4>
-          <h6>$120</h6>
-        </div>
-        <div class="col-md-3">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae, labore dolorem iusto suscipit, sint deleniti enim dolore vel illo repudiandae, maiores inventore modi est assumenda iure harum aut fuga.</p>
+          <h1 class="kato">Postres</h1>
         </div>
       </div>
     </div>
@@ -158,15 +109,15 @@
     <div class="container">
       <div class="row">
         <div class="col-10 mx-auto text-center">
-          <h1 class="text-uppercase font-weight-bold text-red footer-title text-center d-inline-block">
+          <h1 class="text-uppercase font-weight-bold text-red footer-title text-center d-inline-block kato">
             Radzo
           </h1>
-          <h6 class="text-white">Ramen House</h6>
+          <h6 class="text-white beeter">ramen house</h6>
           <!-- Footer icons -->
           <div class="footer-icons my-5 d-flex justify-content-center">
             <!-- Single icon -->
-            <a href="#" class="footer-icon mx-2">
-              <i class="fab fa-facebook text-red"></i>
+            <a href="#" class="footer-icon mx-2 text-red">
+              <i class="fab fa-facebook"></i>
             </a>
             <!-- End of single icon -->
             <!-- Single icon -->
