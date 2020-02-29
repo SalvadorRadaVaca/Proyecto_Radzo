@@ -1,15 +1,14 @@
-
 /* GENERAL STYLES */
 :root {
-  --mainRed: rgb(196,21,51);
+  --mainRed: rgb(196, 21, 51);
   --mainWhite: #fff;
-  --mainBlack: rgb(3,4,5);
+  --mainBlack: rgb(3, 4, 5);
   --mainGrey: #9b9999;
-  --TransGrey: rgba(220,220,220, 0.3);
+  --TransGrey: rgba(220, 220, 220, 0.3);
 }
 @font-face {
   font-family: KATO;
-  src: url('../KATO.otf');
+  src: url("../fonts/KATO.otf");
 }
 body {
   color: var(--mainBlack);
@@ -19,44 +18,50 @@ body {
 .text-slanted {
   font-family: Arial, Helvetica, sans-serif;
 }
-.text-red{
+.text-red {
   color: var(--mainRed);
 }
-.btn-red:hover{
+.btn-red:hover {
   background: var(--mainBlack);
   color: var(--mainRed);
 }
+.kato {
+  font-family: kato;
+}
+.bitter {
+  font-family: bitter;
+}
 /* ############# Home Page ############# */
 /* Navbar */
-.navbar-toggler{
+.navbar-toggler {
   outline: none !important;
   border: none;
   font-size: 2.2rem;
-  color: var(--mainRed)!important;
+  color: var(--mainRed) !important;
 }
-#logoradzo{
-  max-height:90px;
+#logoradzo {
+  max-height: 90px;
   max-width: 80px;
 }
-.nav-link{
+.nav-link {
   font-size: 1.6rem;
   /* border-bottom: 0.1rem solid var(--mainWhite); */
 }
-.nav-active{
+.nav-active {
   border-bottom: 0.1rem solid var(--mainRed);
 }
-.navbar-icon{
-  color:var(--mainWhite);
+.navbar-icon {
+  color: var(--mainWhite);
   font-size: 1.6rem;
   position: relative;
 }
-.navbar-icon:hover{
+.navbar-icon:hover {
   color: var(--mainRed);
 }
-.cart-items{
+.cart-items {
   color: var(--mainWhite);
   position: absolute;
-  top:-15%;
+  top: -15%;
   right: -25%;
   padding: 0.2rem 0.3rem;
   background: var(--mainRed);
@@ -65,9 +70,9 @@ body {
 }
 
 /* Banner */
-.banner{
+.banner {
   min-height: calc(100vh - 116px);
-  background: url('../img/FondoInicio.jpeg');
+  background: url("../img/FondoInicio.jpeg");
   background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-size: cover;
@@ -75,28 +80,28 @@ body {
   background-repeat: no-repeat;
   color: white;
 }
-.letras-inicio{
+.letras-inicio {
   font-size: 60px;
 }
-.ramen-house{
+.ramen-house {
   font-size: 18px;
 }
-.bg-banner{
+.bg-banner {
   background-color: rgba(0, 0, 0, 0.7);
-  min-width: 200px;
+  min-width: 220px;
 }
 /* Featured section */
 
-.featured-container{
+.featured-container {
   background: var(--TransGrey);
   border-radius: 5rem;
   position: relative;
   overflow: hidden;
 }
 
-.featured-search-icon{
+.featured-search-icon {
   background: var(--mainRed);
-  display:inline-block;
+  display: inline-block;
   padding: 0.2rem 0.4rem;
   position: absolute;
   right: 0;
@@ -107,14 +112,14 @@ body {
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-.featured-search-icon:hover{
+.featured-search-icon:hover {
   color: black;
 }
-.featured-container:hover .featured-search-icon{
+.featured-container:hover .featured-search-icon {
   transform: translateX(0%);
 }
 
-.featured-store-link{
+.featured-store-link {
   background: var(--mainRed);
   color: var(--mainWhite);
   padding: 0.2rem 0.4rem;
@@ -125,12 +130,12 @@ body {
   transform: translateX(110%);
   transition: all 0.5s ease-in-out;
 }
-.featured-store-link:hover{
+.featured-store-link:hover {
   background: var(--mainWhite);
   color: var(--mainRed);
   text-decoration: none;
 }
-.featured-container:hover .featured-store-link{
+.featured-container:hover .featured-store-link {
   transform: translateX(0%);
 }
 /* .old-price{
@@ -138,10 +143,10 @@ body {
 } */
 
 /* SKill */
-.skills{
+.skills {
   background: var(--mainWhite);
 }
-.skill-icon{
+.skill-icon {
   color: var(--mainRed);
   font-size: 2rem;
 }
@@ -170,7 +175,7 @@ body {
 
 .login-banner {
   min-height: calc(100vh - 116px);
-  background: url('../img/FondoSignIn.jpeg');
+  background: url("../img/FondoSignIn.jpeg");
   background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-size: cover;
@@ -213,7 +218,7 @@ body {
   width: 0%;
   height: 2px;
   background: linear-gradient(120deg, #3498db, #8e44ad);
-  transition: 0.5s; 
+  transition: 0.5s;
 }
 
 .focus + span::before {
@@ -234,7 +239,7 @@ body {
 
 .singup-banner {
   min-height: calc(100vh - 116px);
-  background: url('../img/FondoSingUp.jpeg');
+  background: url("../img/FondoSingUp.jpeg");
   background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-size: cover;
@@ -247,7 +252,7 @@ body {
 
 .rewards-banner {
   min-height: calc(100vh - 116px);
-  background: url('../img/FondoRewards.jpeg');
+  background: url("../img/FondoRewards.jpeg");
   background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-size: cover;
@@ -256,36 +261,37 @@ body {
   color: white;
 }
 /* MENU */
-.menu{
+.menu {
   /*background: linear-gradient(var(--mainWhite), var(--mainRed));*/
   background-color: white;
 }
-.menu h1{
+.menu h1 {
   background: var(--mainRed);
   color: var(--mainWhite);
   text-transform: uppercase;
   border-radius: 10px;
 }
-.menu img{
+.menu img {
   margin: 5px;
   width: 150px;
   height: 150px;
   transition: transform 0.5s;
   border-radius: 75px;
 }
-.menu img:hover{
+.menu img:hover {
   transform: scale(2);
 }
-.foods-container:hover .foods-store-link{
+.foods-container:hover .foods-store-link {
   transform: translateX(0%);
 }
-.foods-container, .postres{
+.foods-container,
+.postres {
   text-align: center;
   font-size: 1.5rem;
   position: relative;
   /*position: relative;*/
 }
-.foods-store-link{
+.foods-store-link {
   background: var(--mainRed);
   color: var(--mainWhite);
   padding: 0.2rem 0.4rem;
