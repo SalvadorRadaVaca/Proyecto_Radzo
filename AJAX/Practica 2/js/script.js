@@ -1,0 +1,80 @@
+// alert("Estas en Javascript");
+
+$(document).ready(function(){
+   $("#no1").hide();
+   $("#no2").hide();
+   $("#no3").hide();
+   $("#no4").hide();
+   $("#no5").hide();
+   $("#no6").hide();
+
+   $("#no").mouseover(function () {
+      $("#no").hide();
+      $("#no1").show();
+      $("#no2").hide();
+      $("#no3").hide();
+      $("#no4").hide();
+      $("#no5").hide();
+      $("#no6").hide();
+   });
+   $("#no1").mouseover(function(){
+      $("#no1").hide();
+      $("#no2").show();
+      $("#no3").hide();
+      $("#no4").hide();
+      $("#no5").hide();
+      $("#no6").hide();;
+   });
+   $("#no2").mouseover(function(){
+      $("#no1").hide();
+      $("#no2").hide();
+      $("#no3").show();
+      $("#no4").hide();
+      $("#no5").hide();
+      $("#no6").hide();
+   });
+   $("#no3").mouseover(function(){
+      $("#no1").hide();
+      $("#no2").hide();
+      $("#no3").hide();
+      $("#no4").show();
+      $("#no5").hide();
+      $("#no6").hide();
+   });
+   $("#no4").mouseover(function(){
+      $("#no1").hide();
+      $("#no2").hide();
+      $("#no3").hide();
+      $("#no4").hide();
+      $("#no5").show();
+      $("#no6").hide();
+   });
+   $("#no5").mouseover(function(){
+      $("#no1").hide();
+      $("#no2").hide();
+      $("#no3").hide();
+      $("#no4").hide();
+      $("#no5").hide();
+      $("#no6").show();
+   });
+   $("#no6").mouseover(function(){
+      $("#no1").show();
+      $("#no2").hide();
+      $("#no3").hide();
+      $("#no4").hide();
+      $("#no5").hide();
+      $("#no6").hide();
+   });
+   $("#si").click(function(){
+      $("#divRespuesta").fadeIn();
+      $("#divRespuesta").addClass("border border-primary");
+      $("#divRespuesta").html("Has elegido al mejor novio del mundo.");
+      $("#no1").hide();
+      $("#no2").hide();
+      $("#no3").hide();
+      $("#no4").hide();
+      $("#no5").hide();
+      $("#no6").hide();
+      $("#divRespuesta").fadeOut(6000);
+   });
+});

@@ -1,0 +1,27 @@
+body{
+   font-family: 'Arvo', serif ;
+}
+.height{
+   min-height: 100vh;
+}
+.title-underline{
+   width: 200px;
+   height:5px;
+   margin: 0 auto;
+   /* background: blue!important; */
+}
+.height-80{
+   min-height: 100vh;
+}
+/* div{
+   text-align: justify;
+   text-justify: inter-word;
+} */
+.about-picture{
+   background: url(../img/img1.jpeg) center/cover no-repeat fixed;
+   /* Previous line does everything the next comment states */
+   /* background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed; */
+}
